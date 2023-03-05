@@ -1,0 +1,91 @@
+.exercise-card-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.exercise-card {
+    color: grey !important;
+    min-width: 400px;
+    max-width: 400px;
+    min-height: 400px;
+    padding: 2rem;
+    margin: 0 2rem 2rem 2rem;
+    background-color: rgba(74, 74, 74, 0.07);
+    background-color: #ebebeb;
+    box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+        -6px -6px 10px -1px rgba(255, 255, 255, 0.4);
+    border-radius: 15px;
+    text-align: center;
+    list-style: none;
+}
+
+.exercise-data-list {
+    list-style: none;
+}
+
+.data-list-item{
+    text-align: justify;
+    padding-bottom: 2rem;
+}
+
+.data-list-item > h2 {
+    font-size: 1.25rem;
+    padding: 0;
+    margin-bottom: 1rem;
+    color: #f03835;
+    color: black;
+    font-family: 'Anton';
+    text-transform: uppercase;
+}
+
+.exercise-display-btn {
+    margin-top: 1.5rem;
+}
+
+.button-list{
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    grid-template-columns: 1rem 1rem 1rem;
+    
+}
+
+.card-button{
+    padding: 0.5rem;
+    margin: 0.2rem;
+    font-weight: bolder;
+    border: none;
+    color:black;
+    background-color: #ebebeb;
+}
+
+.card-button-icon {
+    height: 24px;
+    width: 24px;
+}
+
+.card-button-icon:hover {
+    cursor: pointer;
+}
+
+.exercise-display-btn {
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    color: grey;
+}
+
+.exercise-display-btn > p {
+    font-size: 14px;
+}
+
+.exercise-display-btn > p:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.data-list-item > h3 > p {
+    padding-top: .5rem;
+}

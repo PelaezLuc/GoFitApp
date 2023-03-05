@@ -1,0 +1,156 @@
+#exercise-list {
+    padding: 1.5rem 3.4rem;
+    background-color: #ebebeb;
+    min-height: 87vh;
+}
+
+.search-nav-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+    background-color: transparent;
+}
+
+.search-container {
+    list-style: none;
+    display: flex;
+    background-color: #ebebeb;
+    align-items: center;
+    justify-content: center;
+    min-width: 320px;
+    padding: 1.5rem;
+    border-radius: 50px;
+    box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+    -6px -6px 10px -1px rgba(255, 255, 255, 0.5);
+}
+
+.filter-menu-item {
+    display: flex;
+}
+
+.filter-btn{
+    color: grey;
+    padding: 10px;
+    background-color: transparent;
+    border: none;
+    text-transform: uppercase;
+    width: 100%;
+    height: fit-content;
+    font-weight: bolder;
+}
+
+.filter-btn:hover {
+    cursor: pointer;
+}
+
+.add-exercise-btn {
+    color: grey;
+    padding: 10px;
+    background-color: #ebebeb;
+    border: none;
+    text-transform: uppercase;
+    width: 100%;
+    height: fit-content;
+    font-weight: bolder;
+    width: fit-content;
+    padding: 1.5rem;
+    border-radius: 50px;
+    box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+        -6px -6px 10px -1px rgba(255, 255, 255, 0.5);
+}
+
+.add-exercise-btn:hover {
+    cursor: pointer;
+}
+
+.add-exercise-btn:active {
+    box-shadow: inset 4px 4px 10px -1px rgba(0, 0, 0, 0.15),
+    inset -4px -4px 10px -1px rgba(255, 255, 255, 0.5);
+}
+
+.add-exercise-btn:focus {
+    outline: none;
+}
+
+.item-slash {
+    width: 2px;
+    height: 1.5rem;
+    background-color: #e3e3e3;
+}
+
+.search-input {
+    font-size: 1rem;
+    padding: 4px;
+    border: none;
+    margin-right: 1rem;
+    background-color: #ebebeb;
+    border-bottom: 2px solid rgba(228, 225, 225, 0.5);;
+}
+
+.search-input:focus {
+   outline: none;
+}
+
+.exercise-header > .logo-app , .font-logo {
+    color:  #f03835 !important;
+}
+
+.font-logo {
+    font-family: 'Anton';
+    font-size: 1.5rem;
+}
+
+.exercise-list {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 4rem;
+}
+
+.no-log-section{
+    text-align: center;
+    padding: 2rem;
+}
+
+.btn-group {
+    display: flex;
+    gap: 0;
+}
+
+@media (min-width: 320px) and (max-width: 767px){
+    .exercise-header {
+        padding: 0 3rem;
+    }
+
+    .search-input {
+        min-width: 185px;
+    }
+
+    .item-slash {
+        display: none;
+    }
+
+    .exercise-card {
+        max-width: 320px;
+        min-width: 320px;
+    }
+
+    .search-container {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 1rem;
+    }
+
+    .btn-group {
+        display: flex;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 671px) {
+    .add-exercise-btn {
+        margin-bottom: 2rem;    
+    }
+}
+

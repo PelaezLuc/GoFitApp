@@ -1,0 +1,287 @@
+.modal-edit-controls:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px white inset;
+}
+
+.overlay-edit-modal {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    height: -moz-fit-content;
+    background: rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: center;
+    z-index: 99;
+}
+
+.modal-edit-container {
+    width: 600px;
+    height: -moz-fit-content;
+    height: fit-content;
+    background-color: white;
+    position: relative;
+    border-radius: 10px;
+    padding: 2rem 4rem 4rem 4rem;
+    position: relative;
+    transform: translateY(8vh);
+}
+
+.modal-edit-form {
+    box-shadow: none;
+    background-color: white;
+    margin-top: 2rem;
+}
+
+.modal-edit-header {
+    text-align: left;
+}
+
+.modal-edit-title {
+    font-weight: bolder;
+    font-size: 30px;
+}
+
+.modal-edit-group {
+    width: 100%;
+    display: flex;
+    margin-bottom: 4rem;
+    align-items: center;
+    gap: 1rem;
+    text-align: left;
+}
+
+/* .textarea {
+    display: flex;
+    margin-top: 4rem;
+    margin-bottom: 3rem;
+    gap: 1rem;
+} */
+
+.modal-edit-controls {
+    color: black;
+    width: 100%;
+    background-color: white;
+    font-family: 'calibri';
+    border: 1px solid #00000024;
+    border-radius: 20px;
+    height: 2rem;
+    padding: 15px;
+    font-size: 18px;
+}
+
+.modal-edit-controls:focus {
+    outline: 2px solid rgba(0, 0, 0, 0.169);
+    border:none;
+}
+
+.modal-edit-label {
+    min-width: 6rem;
+    color: grey;
+    font-weight: bold;
+}
+
+.modal-edit-controls.video {
+    border-radius: 0;
+    border: none;
+    padding: 0;
+}
+
+/* .text-area {
+    flex-direction: column  ;
+    margin-top: 4rem;
+}
+
+.description {
+    height: 100px;
+    transform: translateY(-10px);
+    resize: none;
+} */
+
+
+.modal-edit-submit-btn {
+    border: none;
+    padding: 1rem;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.modal-edit-submit-btn:hover {
+    cursor: pointer;
+    background-color: rgb(124, 124, 124);
+}
+
+@media (max-width: 475px) {
+    .modal-edit-header {
+        display: none;
+    }
+
+    .overlay-edit-modal {
+        padding: 0;
+        height: 100vh;
+    }
+
+    .modal-edit-container {
+        position: relative;
+        width: 600px;
+        height: fit-content;
+        background-color: white;
+        position: relative;
+        border-radius: 10px;
+        padding: 0rem 2rem 2rem 2rem;
+    }
+    
+    .modal-edit-form {
+        padding: 0;
+    }
+
+    .modal-edit-group:not(.textarea) {
+        display: flex;
+        flex-direction: column-reverse;
+        margin-bottom: 1rem;
+        align-items: flex-start;
+        gap: 1rem;
+        flex-direction: column;
+    }
+
+    .textarea {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+        gap: 1.5rem;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 768px), (min-height: 768px) and (min-width: 763px){
+    .modal-edit-container {
+        height: 670px;
+    }
+
+    .modal-edit-form {
+        margin-top: 1rem;
+    }
+
+    .modal-edit-group:not(.textarea) {
+        margin-bottom: 2rem;
+    }
+}
+
+@media (max-height: 325px) {
+    .overlay-edit-modal {
+        padding: 0;
+    }
+    .modal-edit-container {
+        padding: 0 1rem 1rem 1rem;
+        width: 100vw;
+        height: fit-content;
+        transform: translateY(0%);
+    }
+
+    .modal-edit-header {
+        display: none;
+    }
+
+    .modal-edit-form {
+        margin-top: 0;
+    }
+
+    .modal-edit-group:not(.textarea) {
+        margin-bottom: 1rem;
+    }
+
+    .textarea {
+        margin-top: 1rem;
+        margin-bottom: 0;
+    }
+
+    .description {
+        height: 50px;
+        overflow: hidden;
+    }
+}
+
+@media (width: 763px) and (height: 375px){
+    .overlay-edit-modal {
+        padding: 0;
+    }
+    .modal-edit-container {
+        padding: 0 1rem 1rem 1rem;
+        width: 100vw;
+        height: fit-content;
+        transform: translateY(15%);
+    }
+
+    .modal-edit-header {
+        display: none;
+    }
+
+    .modal-edit-form {
+        margin-top: 0;
+    }
+
+    .modal-edit-group:not(.textarea) {
+        margin-bottom: 1rem;
+    }
+
+    .textarea {
+        margin-top: 1rem;
+        margin-bottom: 0;
+    }
+
+    .description {
+        height: 50px;
+        overflow: hidden;
+    }
+}
+
+@media (width: 763px) and (height: 425px){
+    .overlay-edit-modal {
+        padding: 0;
+    }
+    .modal-edit-container {
+        padding: 0 1rem 1rem 1rem;
+        width: 100vw;
+        height: fit-content;
+        transform: translateY(18%);
+    }
+
+    .modal-edit-header {
+        display: none;
+    }
+
+    .modal-edit-form {
+        margin-top: 0;
+    }
+
+    .modal-edit-group:not(.textarea) {
+        margin-bottom: 1rem;
+    }
+
+    .textarea {
+        margin-top: 1rem;
+        margin-bottom: 0;
+    }
+
+    .description {
+        height: 50px;
+        overflow: hidden;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1024px) {
+    .modal-edit-container {
+        height: 680px;
+    }
+
+    .modal-edit-form {
+        margin-top: 0;
+    }
+
+    .modal-edit-group:not(.text-area){
+        margin-bottom: 3rem;
+    }
+}
