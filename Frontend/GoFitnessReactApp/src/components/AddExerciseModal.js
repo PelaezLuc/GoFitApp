@@ -100,7 +100,7 @@ export const AddExerciseModal = ({
                                 onChange={(e) => setMuscleGroup(e.target.value)}
                             />
                         </div>
-                        <div className="modal-group">
+                        {/*<div className="modal-group">
                             <label className="modal-label" htmlFor="video">Vídeo: </label>
                             <input 
                                 className="modal-controls video" 
@@ -109,7 +109,7 @@ export const AddExerciseModal = ({
                                 id="video" 
                                 onChange={(e) => setVideo(e.target.value)}
                             />
-                        </div>
+                        </div> */}
                         <input 
                             className="modal-submit-btn" 
                             type="submit" 
